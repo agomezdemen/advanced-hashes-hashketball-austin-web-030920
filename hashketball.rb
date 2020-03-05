@@ -104,11 +104,12 @@ def big_shoe_rebounds
         data.each do |data_item|
           if data_item[:shoe] > big
             big = data_item[:shoe]
-            rebounds = data_item[:]
+            rebounds = data_item[:rebounds]
           end
         end
       end
     end
   end 
+  return rebounds
 end  
   
